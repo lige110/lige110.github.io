@@ -17,13 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="Learn-Thnink-Do it">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meng&#39;s Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Meng&#39;s Blog">
+<meta property="og:description" content="Learn-Thnink-Do it">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Meng Li">
 <meta name="twitter:card" content="summary">
@@ -40,7 +42,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Meng's Blog</title>
   
 
 
@@ -92,7 +94,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Meng's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -111,6 +113,16 @@
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -147,13 +159,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/01/Shell_scripts_notes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/Me.png">
       <meta itemprop="name" content="Meng Li">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Learn-Thnink-Do it">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Meng's Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -168,7 +180,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-03-01 12:12:53" itemprop="dateCreated datePublished" datetime="2020-03-01T12:12:53+01:00">2020-03-01</time>
+              <time title="Created: 2020-03-01 23:36:06" itemprop="dateCreated datePublished" datetime="2020-03-01T23:36:06+01:00">2020-03-01</time>
             </span>
 
           
@@ -182,132 +194,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#shell-script">Shell Script</a><ul>
-<li><a href="#environment-variable">Environment Variable</a></li>
-<li><a href="#positional-argument">Positional Argument</a></li>
-<li><a href="#predefined-variables">Predefined Variables</a></li>
-<li><a href="#operator">Operator</a></li>
-<li><a href="#conditions">Conditions</a></li>
-<li><a href="#flow-control">Flow Control</a></li>
-<li><a href="#read-commandline">Read Commandline</a></li>
-<li><a href="#function">Function</a></li>
-<li><a href="#shell-best-practice">Shell Best Practice</a></li>
-<li><a href="#tricks">Tricks</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h2><span id="shell-script">Shell Script</span><a href="#shell-script" class="header-anchor">#</a></h2><h3><span id="environment-variable">Environment Variable</span><a href="#environment-variable" class="header-anchor">#</a></h3><p> Environment variables are stored under <code>/etc/profile</code>, we can add our own env variable to this file:<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TOM_HOME=/opt/tomcat</span><br><span class="line"><span class="built_in">export</span> TOM_CAT</span><br></pre></td></tr></table></figure><br>After adding our own variable, to make this env variable effective we need this command:<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure></p>
-<h3><span id="positional-argument">Positional Argument</span><a href="#positional-argument" class="header-anchor">#</a></h3><h4><span id="basic-grammar">Basic grammar:</span><a href="#basic-grammar" class="header-anchor">#</a></h4><blockquote>
-<p>$n     refers to the nth argument<br>$*      refers to all arguments<br>$@   refers to all arguments individually<br>$#     refers to the number of arguments</p>
-</blockquote>
-<h4><span id="positional-argument-demo">positional argument demo</span><a href="#positional-argument-demo" class="header-anchor">#</a></h4><p>Write a shell script like this:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># get each input argument</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"<span class="variable">$0</span>  <span class="variable">$1</span>  <span class="variable">$2</span>"</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"$*"</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"<span class="variable">$@</span>"</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"arugnumber=<span class="variable">$#</span>"</span></span><br></pre></td></tr></table></figure>
-<p>Run command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./posiontionalpara 30 60</span><br></pre></td></tr></table></figure>
-<p>And we will get following output:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">./positionpara.sh 30 60</span><br><span class="line">30 60</span><br><span class="line">30 60</span><br><span class="line">arugnumber=2</span><br></pre></td></tr></table></figure>
-
-<h3><span id="predefined-variables">Predefined Variables</span><a href="#predefined-variables" class="header-anchor">#</a></h3><h4><span id="basic-grammar">Basic Grammar</span><a href="#basic-grammar" class="header-anchor">#</a></h4><blockquote>
-<p>$$ curent PID<br>$! the last backfroud executed PID<br>$? the last command’s return state (0 means successful)</p>
-</blockquote>
-<h4><span id="predefined-variable-demo">predefined variable demo</span><a href="#predefined-variable-demo" class="header-anchor">#</a></h4><p>Execute following shell script</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"current command $$"</span></span><br><span class="line">./positionpara.sh &amp;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"last backgroud command=$!"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"state of command=$?"</span></span><br></pre></td></tr></table></figure>
-<p>Results:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@ip-172-31-40-234:~/Shell$ ./preshell.sh</span><br><span class="line">current <span class="built_in">command</span> 4627</span><br><span class="line">last backgroud <span class="built_in">command</span>=4628</span><br><span class="line">state of <span class="built_in">command</span>=0</span><br><span class="line">ubuntu@ip-172-31-40-234:~/Shell$ ./positionpara.sh</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-<h3><span id="operator">Operator</span><a href="#operator" class="header-anchor">#</a></h3><h4><span id="basic-grammar">Basic grammar</span><a href="#basic-grammar" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">R1=$(((2+3)*4))</span><br><span class="line"></span><br><span class="line">R2=$[(2+3)*4]</span><br><span class="line"></span><br><span class="line">expr</span><br></pre></td></tr></table></figure>
-
-<h4><span id="operator-demo">operator demo</span><a href="#operator-demo" class="header-anchor">#</a></h4><p>Eg: how to caculate the sum of two numbers:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">R1=$[<span class="variable">$1</span>+<span class="variable">$2</span>]</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Resultoftwonumber=<span class="variable">$R1</span>"</span></span><br></pre></td></tr></table></figure>
-<h3><span id="conditions">Conditions</span><a href="#conditions" class="header-anchor">#</a></h3><h4><span id="basic-grammar">Basic grammar</span><a href="#basic-grammar" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># one space before condition</span></span><br><span class="line">[ condition]</span><br><span class="line"><span class="comment"># condition</span></span><br></pre></td></tr></table></figure>
-<p>common commands</p>
-<ul>
-<li>compare numbers/strings<ul>
-<li>equal =</li>
-<li>greater -gt</li>
-<li>greater equal -ge</li>
-<li>less than -lt</li>
-</ul>
-</li>
-<li>file <ul>
-<li>read -r</li>
-<li>write -w</li>
-<li>execute -x</li>
-</ul>
-</li>
-<li>file<ul>
-<li>file exists and normal file -f</li>
-<li>file exists -e</li>
-<li>file exists and is a directory -d</li>
-</ul>
-</li>
-</ul>
-<h4><span id="conditions-demo">conditions demo</span><a href="#conditions-demo" class="header-anchor">#</a></h4><ol>
-<li><p>if “ok” equals “ok”</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># if "ok" equals "ok"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">"ok"</span> = <span class="string">"ok"</span>opi]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span> <span class="string">"equal"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure></li>
-<li><p>if 23 geater than 22</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>if there is a file name “aaa.txt” under ~/Shell</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -e ~/Shell/aaa.txt]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span>  <span class="string">"aaa.txt exists"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3><span id="flow-control">Flow Control</span><a href="#flow-control" class="header-anchor">#</a></h3><h4><span id="if-condition">if condition</span><a href="#if-condition" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ condition]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">elif</span> [ condition]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
-
-<h4><span id="case-condition">case condition</span><a href="#case-condition" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> <span class="variable">$var</span> <span class="keyword">in</span></span><br><span class="line"><span class="string">"1"</span>)</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">;;</span><br><span class="line"><span class="string">"2"</span>)</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">;;</span><br><span class="line">*)</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">;;</span><br><span class="line"><span class="keyword">esac</span></span><br></pre></td></tr></table></figure>
-<p>case demo:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<h4><span id="for-loop">for loop</span><a href="#for-loop" class="header-anchor">#</a></h4><ol>
-<li>first usage<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="variable">$var</span> <span class="keyword">in</span> var1 var2 var3</span><br><span class="line"><span class="keyword">do</span> </span><br><span class="line">	<span class="keyword">do</span> sth</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
-demo:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># print all input arguments</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># use $*</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="string">"$*"</span></span><br><span class="line"><span class="keyword">do</span> </span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"the num is <span class="variable">$i</span>"</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"========================"</span></span><br><span class="line"><span class="comment"># use $@</span></span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> <span class="string">"<span class="variable">$@</span>"</span></span><br><span class="line"><span class="keyword">do</span> </span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"<span class="variable">$j</span>"</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></li>
-<li>second usage<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> [(init;condition;var change)]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="keyword">do</span> sth</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
-demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SUM=0</span><br><span class="line"><span class="keyword">for</span>((i=0;i&lt;=100;i++))</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	SUM=$[<span class="variable">$SUM</span>+<span class="variable">$i</span>]</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$SUM</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h4><span id="while-loop">while loop</span><a href="#while-loop" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SUM=0</span><br><span class="line">i=0</span><br><span class="line"><span class="keyword">while</span> [ <span class="variable">$i</span> -lt <span class="variable">$1</span> ]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	i=$[<span class="variable">$i</span>+1]</span><br><span class="line">	SUM=$[<span class="variable">$SUM</span>+<span class="variable">$i</span>]</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$SUM</span></span><br></pre></td></tr></table></figure>
-
-<h3><span id="read-commandline">Read Commandline</span><a href="#read-commandline" class="header-anchor">#</a></h3><h4><span id="basic-grammar">Basic grammar</span><a href="#basic-grammar" class="header-anchor">#</a></h4><p>-p texts will be showed in the commad during input<br>-t must input within time</p>
-<h4><span id="read-commandline-demo">read commandline demo</span><a href="#read-commandline-demo" class="header-anchor">#</a></h4><p>read a num</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">read</span> -p <span class="string">"please input a num1"</span> NUM1</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"NUM1=<span class="variable">$NUM1</span>"</span></span><br><span class="line"><span class="built_in">read</span> -t 10 -p <span class="string">"please input a num2"</span> NUM2</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"NUM2=<span class="variable">$NUM2</span>"</span></span><br></pre></td></tr></table></figure>
-
-<h3><span id="function">Function</span><a href="#function" class="header-anchor">#</a></h3><h4><span id="system-function">System function</span><a href="#system-function" class="header-anchor">#</a></h4><p>basename: print out the file name without directory</p>
-<p>dirname: print out the directory name</p>
-<h4><span id="user-function">User function</span><a href="#user-function" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ <span class="keyword">function</span> ] funname[()]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># calculate the sum of two arguments</span></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">getSum</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">	SUM=$[<span class="variable">$n1</span>+<span class="variable">$n2</span>]</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"SUM=<span class="variable">$SUM</span>"</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"input the first argument"</span> n1</span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"input the second argument"</span> n2</span><br><span class="line"></span><br><span class="line">getSum <span class="variable">$n1</span> <span class="variable">$n2</span></span><br></pre></td></tr></table></figure>
-
-
-<h3><span id="shell-best-practice">Shell Best Practice</span><a href="#shell-best-practice" class="header-anchor">#</a></h3><blockquote>
-<ol>
-<li>buckup the database “test” to /data/backup/db everyday at 2:10</li>
-<li>the file should be named: <strong>Year_Month_DayHourMinuteSecond.tar.gz</strong></li>
-<li>delete the backup files which were created 10 days ago</li>
-</ol>
-</blockquote>
-<p>Create a shell script like following: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># set backup path</span></span><br><span class="line">BACKUP=<span class="string">"/data/backup/db"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># set back up date</span></span><br><span class="line">DATETIME=$(date +%Y_%m_%d%H%M%S)</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"===================STARTING TO BACKUP======================="</span></span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"===================BACKUP PATH IS <span class="variable">$BACKUP</span>/<span class="variable">$DATETIME</span>.tar.gz"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># HOST</span></span><br><span class="line">HOST=<span class="string">"localhost"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># USER</span></span><br><span class="line">USER=<span class="string">"root"</span></span><br><span class="line"><span class="comment"># NO PASSWARD</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Database to be backuped</span></span><br><span class="line">DATABASE=<span class="string">"test"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Check if directory already exists</span></span><br><span class="line">[  !  -d  <span class="string">"<span class="variable">$BACKUP</span>/<span class="variable">$DATETIME</span>"</span>  ] &amp; mkdir  -p  <span class="string">"<span class="variable">$BACKUP</span>/<span class="variable">$DATETIME</span>"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># execute database backup  </span></span><br><span class="line">mysqldump -u  <span class="variable">$USER</span>  --host  <span class="variable">$HOST</span>  <span class="variable">$DATABASE</span> | gzip &gt;  <span class="string">"<span class="variable">$BACKUP</span>/<span class="variable">$DATETIME</span>/<span class="variable">$DATETIME</span>.sql.gz"</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span>  <span class="variable">$BACKUP</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># compress the file</span></span><br><span class="line">tar -zcvf  <span class="variable">$DATETIME</span>.tar.gz <span class="variable">$DATETIME</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Delete temporary file</span></span><br><span class="line">rm  -rf  <span class="variable">$BACKUP</span>/<span class="variable">$DATETIME</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Delete files from 10 days ago</span></span><br><span class="line">find  <span class="variable">$BACKUP</span>  -mtime +10  -name  <span class="string">"*.tar.gz"</span>  -<span class="built_in">exec</span>  rm  -rf  &#123;&#125; \;</span><br><span class="line"><span class="built_in">echo</span>  <span class="string">"================BACKUP SUCCEED! =============="</span></span><br></pre></td></tr></table></figure>
-<p>My script is stored under<br><code>/home/ubuntu/Shell/backup.sh</code><br>Then use crontab to run this shell</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
-<p>Insert following command to file:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 2 * * * sudo /home/ubuntu/Shell/backup.sh</span><br></pre></td></tr></table></figure>
-
-<p>Now we can backup our database called “test” everyday at 2:10 in directory <code>/data/backup/db</code>, and delete the backups from 10 days ago!</p>
-<hr>
-<h3><span id="tricks">Tricks</span><a href="#tricks" class="header-anchor">#</a></h3><p>How to comment out multiple lines in shell scripts?</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:&lt;&lt;!</span><br><span class="line">This line is commented.</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Hello"</span></span><br><span class="line">!</span><br></pre></td></tr></table></figure>
-
+          <hr>
+<h2 id=""><a href="#" class="headerlink" title="{}"></a>{}</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/01/Shell_scripts_notes/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -329,13 +225,13 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/01/Notes-on-Shell-Script/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/Me.png">
       <meta itemprop="name" content="Meng Li">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Learn-Thnink-Do it">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Meng's Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -386,13 +282,13 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/21/My-first-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/Me.png">
       <meta itemprop="name" content="Meng Li">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Learn-Thnink-Do it">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Meng's Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -448,13 +344,13 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/21/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/Me.png">
       <meta itemprop="name" content="Meng Li">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Learn-Thnink-Do it">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Meng's Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -570,8 +466,10 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Meng Li"
+      src="/images/Me.png">
   <p class="site-author-name" itemprop="name">Meng Li</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Learn-Thnink-Do it</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -613,7 +511,7 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.2
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
   </div>
 
         
@@ -639,7 +537,7 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
