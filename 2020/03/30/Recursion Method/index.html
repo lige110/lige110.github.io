@@ -20,17 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Learn-Thnink-Do it">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Meng&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Ideas about how to solve problems recursively.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Problem Solving with Recursion Method">
+<meta property="og:url" content="http://yoursite.com/2020/03/30/Recursion%20Method/index.html">
 <meta property="og:site_name" content="Meng&#39;s Blog">
-<meta property="og:description" content="Learn-Thnink-Do it">
+<meta property="og:description" content="Ideas about how to solve problems recursively.">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-30T15:45:17.000Z">
+<meta property="article:modified_time" content="2020-04-07T22:36:59.083Z">
 <meta property="article:author" content="Meng Li">
+<meta property="article:tag" content="Algorithms">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/">
+<link rel="canonical" href="http://yoursite.com/2020/03/30/Recursion%20Method/">
 
 
 <script id="page-configurations">
@@ -38,11 +41,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false
+    isPost : true
   };
 </script>
 
-  <title>Archive | Meng's Blog</title>
+  <title>Problem Solving with Recursion Method | Meng's Blog</title>
   
 
 
@@ -141,109 +144,112 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 4 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/30/Recursion%20Method/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Me.JPG">
+      <meta itemprop="name" content="Meng Li">
+      <meta itemprop="description" content="Learn-Thnink-Do it">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meng's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Problem Solving with Recursion Method
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-30 17:45:17" itemprop="dateCreated datePublished" datetime="2020-03-30T17:45:17+02:00">2020-03-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-08 00:36:59" itemprop="dateModified" datetime="2020-04-08T00:36:59+02:00">2020-04-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
+        <p>Ideas about how to solve problems recursively.</p>
+<a id="more"></a>
+<h2><span id="recursion-method">Recursion Method</span><a href="#recursion-method" class="header-anchor">#</a></h2><h3><span id="concept">Concept</span><a href="#concept" class="header-anchor">#</a></h3><p>Some problems can be divided into smaller problems, and each smaller problem has the same requirements as the original problem, then a recursive method can be considered.</p>
+<h3><span id="how-to-implement">How to implement</span><a href="#how-to-implement" class="header-anchor">#</a></h3><p>There are some key points to be considered when implementing a recursive method.</p>
+<ol>
+<li>Reconstruct the problem.<br>Whether this problem can be divided into sub-problem which has the same requirement as the origin problem? </li>
+<li>Define the boundary of the problem.<br>Since we are always calling the same method, we need to tell the program when to stop, or we will get into an infinite loop.</li>
+<li>Think about the body of the method.<br>We need to think about, what is always conducted, in order to solve the problem.</li>
+<li>Define the return value of the method.<br>Consider what to return when the sub-problem is solved.</li>
+</ol>
+<h3><span id="example-merge-two-sorted-lists">Example: Merge two sorted lists</span><a href="#example-merge-two-sorted-lists" class="header-anchor">#</a></h3><p><strong>Requirement:</strong></p>
+<blockquote>
+<p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: a: 1-&gt;2-&gt;4, b: 1-&gt;3-&gt;4</span><br><span class="line">Output: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-30T17:45:17+02:00"
-              content="2020-03-30">
-          03-30
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/30/Recursion%20Method/" itemprop="url">
-            <span itemprop="name">Problem Solving with Recursion Method</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-15T17:45:17+01:00"
-              content="2020-03-15">
-          03-15
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/15/Packages%20management/" itemprop="url">
-            <span itemprop="name">Packages Management</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-02T16:45:17+01:00"
-              content="2020-03-02">
-          03-02
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/02/Vim-commands/" itemprop="url">
-            <span itemprop="name">Vim commands</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-01T16:03:07+01:00"
-              content="2020-03-01">
-          03-01
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/01/Shell_scripts_notes/" itemprop="url">
-            <span itemprop="name">Shell Scripts Best Practice</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
+<p>This a problem regarding Linked List, and this is a typical problem which can be solved with recursive method.<br>Problem solving process:</p>
+<ol>
+<li><p>We can find that this problem can be divided into sub-problems.<br>If we take the <code>Node 1</code> from <code>list a</code> into the result linked list, then the problem turns into</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: a: 2-&gt;4, b: 1-&gt;3-&gt;4</span><br><span class="line">Output: 1-&gt;2-&gt;3-&gt;4-&gt;4</span><br></pre></td></tr></table></figure>
+<p>This sub-problem has the same requirements as the origin one! Recursive method can be implemented!</p>
+</li>
+<li><p>Define boundary of the problem.</p>
+</li>
+</ol>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Algorithms/" rel="tag"># Algorithms</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/15/Packages%20management/" rel="prev" title="Packages Management">
+      <i class="fa fa-chevron-left"></i> Packages Management
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -294,6 +300,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">Recursion Method#</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">Concept#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">How to implement#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">Example: Merge two sorted lists#</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
