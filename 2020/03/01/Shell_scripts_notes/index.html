@@ -118,9 +118,19 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-about">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
 
   </li>
   </ul>
@@ -203,13 +213,43 @@
 <ul>
 <li><a href="#shell-script">Shell Script</a><ul>
 <li><a href="#environment-variable">Environment Variable</a></li>
-<li><a href="#positional-argument">Positional Argument</a></li>
-<li><a href="#predefined-variables">Predefined Variables</a></li>
-<li><a href="#operator">Operator</a></li>
-<li><a href="#conditions">Conditions</a></li>
-<li><a href="#flow-control">Flow Control</a></li>
-<li><a href="#read-commandline">Read Commandline</a></li>
-<li><a href="#function">Function</a></li>
+<li><a href="#positional-argument">Positional Argument</a><ul>
+<li><a href="#basic-grammar">Basic grammar:</a></li>
+<li><a href="#positional-argument-demo">positional argument demo</a></li>
+</ul>
+</li>
+<li><a href="#predefined-variables">Predefined Variables</a><ul>
+<li><a href="#basic-grammar">Basic Grammar</a></li>
+<li><a href="#predefined-variable-demo">predefined variable demo</a></li>
+</ul>
+</li>
+<li><a href="#operator">Operator</a><ul>
+<li><a href="#basic-grammar">Basic grammar</a></li>
+<li><a href="#operator-demo">operator demo</a></li>
+</ul>
+</li>
+<li><a href="#conditions">Conditions</a><ul>
+<li><a href="#basic-grammar-1">Basic grammar</a></li>
+<li><a href="#conditions-demo">conditions demo</a></li>
+</ul>
+</li>
+<li><a href="#flow-control">Flow Control</a><ul>
+<li><a href="#if-condition">if condition</a></li>
+<li><a href="#case-condition">case condition</a></li>
+<li><a href="#for-loop">for loop</a></li>
+<li><a href="#while-loop">while loop</a></li>
+</ul>
+</li>
+<li><a href="#read-commandline">Read Commandline</a><ul>
+<li><a href="#basic-grammar-2">Basic grammar</a></li>
+<li><a href="#read-commandline-demo">read commandline demo</a></li>
+</ul>
+</li>
+<li><a href="#function">Function</a><ul>
+<li><a href="#system-function">System function</a></li>
+<li><a href="#user-function">User function</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#shell-best-practice">Shell Best Practice</a></li>
@@ -412,15 +452,22 @@ demo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span clas
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
+          <a href="/archives">
           <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">tags</span>
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
