@@ -20,20 +20,23 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="This Markdown note contain the most command Vim commands.">
+  <meta name="description" content="Redux is not Redundant.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vim commands">
-<meta property="og:url" content="http://yoursite.com/2020/03/02/Vim-commands/index.html">
+<meta property="og:title" content="Redux in React">
+<meta property="og:url" content="http://yoursite.com/2020/12/06/Redux%20in%20React/index.html">
 <meta property="og:site_name" content="Meng&#39;s Blog">
-<meta property="og:description" content="This Markdown note contain the most command Vim commands.">
+<meta property="og:description" content="Redux is not Redundant.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-02T15:45:17.000Z">
-<meta property="article:modified_time" content="2020-03-02T19:18:13.409Z">
+<meta property="og:image" content="https://i.imgur.com/v0nUi6m.jpg">
+<meta property="og:image" content="https://imgur.com/Rr2WFmH.jpg">
+<meta property="article:published_time" content="2020-12-05T23:00:00.000Z">
+<meta property="article:modified_time" content="2020-12-05T23:19:37.904Z">
 <meta property="article:author" content="Meng Li">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="React Redux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/v0nUi6m.jpg">
 
-<link rel="canonical" href="http://yoursite.com/2020/03/02/Vim-commands/">
+<link rel="canonical" href="http://yoursite.com/2020/12/06/Redux%20in%20React/">
 
 
 <script id="page-configurations">
@@ -45,7 +48,7 @@
   };
 </script>
 
-  <title>Vim commands | Meng's Blog</title>
+  <title>Redux in React | Meng's Blog</title>
   
 
 
@@ -159,7 +162,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/02/Vim-commands/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/06/Redux%20in%20React/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/Me.JPG">
@@ -172,7 +175,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Vim commands
+          Redux in React
         </h1>
 
         <div class="post-meta">
@@ -183,7 +186,16 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-02 16:45:17 / Modified: 20:18:13" itemprop="dateCreated datePublished" datetime="2020-03-02T16:45:17+01:00">2020-03-02</time>
+              <time title="Created: 2020-12-06 00:00:00 / Modified: 00:19:37" itemprop="dateCreated datePublished" datetime="2020-12-06T00:00:00+01:00">2020-12-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
+                </span>
             </span>
 
           
@@ -197,114 +209,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>This Markdown note contain the most command Vim commands.</p>
+        <p>Redux is not Redundant.</p>
 <a id="more"></a>
 
-<h2><span id="vim">Vim</span><a href="#vim" class="header-anchor">#</a></h2><h3><span id="1-insert">1. insert</span><a href="#1-insert" class="header-anchor">#</a></h3><table>
-<thead>
-<tr>
-<th align="center">Command</th>
-<th align="center">Effect</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">a</td>
-<td align="center">insert after cursor</td>
-</tr>
-<tr>
-<td align="center">A</td>
-<td align="center">insert at the end of line</td>
-</tr>
-<tr>
-<td align="center">i</td>
-<td align="center">insert before current cursor</td>
-</tr>
-<tr>
-<td align="center">I</td>
-<td align="center">insert at the beginning of line</td>
-</tr>
-<tr>
-<td align="center">o</td>
-<td align="center">insert a new lien below the cursor</td>
-</tr>
-<tr>
-<td align="center">O</td>
-<td align="center">Insert a new line above the cursor</td>
-</tr>
-</tbody></table>
-<h3><span id="2-save">2. save</span><a href="#2-save" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:wq      					save and quit</span><br><span class="line">:w + /folder      save to another place</span><br><span class="line">:q!								quit without saving</span><br><span class="line">:wq!	            force save and quit (root user when file has no write property)</span><br><span class="line">ZZ 	  						save and quit</span><br></pre></td></tr></table></figure>
+<h2><span id="concepts-of-redux">Concepts of Redux</span><a href="#concepts-of-redux" class="header-anchor">#</a></h2><img src="https://i.imgur.com/v0nUi6m.jpg" alt="Redux concept" style="zoom:100%;">
 
-<h3><span id="2-operation-with-lines">2. operation with lines</span><a href="#2-operation-with-lines" class="header-anchor">#</a></h3><h4><span id="1-move-cursor">1) move cursor</span><a href="#1-move-cursor" class="header-anchor">#</a></h4><ol>
-<li><p>up down left right</p>
-<blockquote>
-<p>h, j, k, l                          left, down, up, right </p>
-</blockquote>
-</li>
-<li><p>move to file beginning or file end</p>
-<blockquote>
-<p>gg                   file beginning<br>G                 file end</p>
-</blockquote>
-</li>
-<li><p>move to line beginning or end</p>
-<blockquote>
-<p>^                    line beginning<br>$                   line end</p>
-</blockquote>
-</li>
-<li><p>move to certain line</p>
-<blockquote>
-<p>:n                                               move to n line</p>
-</blockquote>
-</li>
+<p>The three most important parts in Redux are <strong>Store, Reducer and Actions.</strong></p>
+<p>The <strong>Store</strong> is a central data warehouse for storing data in the app as the app’s state, being the only authorized data sources for data in the app. The Actions can have many <strong>Types</strong> (usually in contant string format), the behavior of each <strong>Type</strong> of <strong>Action</strong> is predefined, the events in the React app can trigger certain <strong>Actions</strong>, and those <strong>Actions</strong> will be dispatched to the <strong>Store</strong>. Then the <strong>Reducers</strong> will update the <strong>state</strong> in the <strong>Store</strong> according to the <strong>Actions</strong> which are dispatched to the <strong>Store</strong>, notice that they should only update the states in the <strong>Store</strong> (no other tasks), and then the <strong>Store</strong> will notify the React app there is a newer state and pass a newer state to the app.</p>
+<h2><span id="dependencies-in-react">Dependencies in React</span><a href="#dependencies-in-react" class="header-anchor">#</a></h2><p>Installing packages <code>redux, react-redux, redux-thunk</code> using <code>npm install --save ...</code></p>
+<h2><span id="enable-redux-in-react-app">Enable Redux in React app</span><a href="#enable-redux-in-react-app" class="header-anchor">#</a></h2><ol>
+<li>Define the types of actions will be conducted and the Action creator</li>
+<li>Define the Reduces for handling those Actions</li>
+<li>Create a Store instance, pass the rootReducer as the argument to the store instance</li>
+<li>Wrap the whole app component with tag <code>&lt;Provider store={store}&gt; &lt;/Provider&gt;</code></li>
+<li>In the component, use <code>connect</code> to connect the component to the global store</li>
+<li>One can also <code>mapStateToProps</code> for each component, then the state in store can be mapped into component’s state</li>
 </ol>
-<h4><span id="2-delete-or-paste">2) delete or paste</span><a href="#2-delete-or-paste" class="header-anchor">#</a></h4><ol>
-<li><p>delete characters</p>
-<blockquote>
-<p>x                                                delete one char<br>nx                                            delete n chars</p>
-</blockquote>
-</li>
-<li><p>delete line</p>
-<blockquote>
-<p>dd                                             cut one line<br>ndd                                         cut n lines<br>:n1,n2d                                   cut the lline range from n1 to n2</p>
-</blockquote>
-</li>
-<li><p>paste</p>
-<blockquote>
-<p>p                                              paste below the cursor<br>P                                           paste above the curosr</p>
-</blockquote>
-</li>
-<li><p>delete all file</p>
-<blockquote>
-<p>dG                                          delete until file end</p>
-</blockquote>
-</li>
-</ol>
-<h4><span id="3-copy">3) copy</span><a href="#3-copy" class="header-anchor">#</a></h4><blockquote>
-<p>yy                                        copy current line<br>nyy                                      copy n lines</p>
-</blockquote>
-<h4><span id="4-undo-and-redo">4) undo and redo</span><a href="#4-undo-and-redo" class="header-anchor">#</a></h4><blockquote>
-<p>u                                          undo last command<br>ctrl + r                                     redo last command</p>
-</blockquote>
-<h4><span id="5-replace">5) replace</span><a href="#5-replace" class="header-anchor">#</a></h4><blockquote>
-<p>r                                           replace one char<br>R                                         enter replace mod until “esc”</p>
-</blockquote>
-<hr>
-<h3><span id="3-vim-settings">3. Vim settings</span><a href="#3-vim-settings" class="header-anchor">#</a></h3><blockquote>
-<p>Vim setting file should be stored under  <code>~/.vimrc</code></p>
-</blockquote>
-<p>command settings</p>
-<blockquote>
-<p>:sest nu/nonu                     display the index number of line<br>:syntax on/off                       display color for grammar highilght<br>:set list/nolist                       dispaly char for table or enter</p>
-</blockquote>
-<h3><span id="4-search">4. search</span><a href="#4-search" class="header-anchor">#</a></h3><blockquote>
-<p>/keyword                            search after cursor<br>?keyword                             search above cursor<br>n                                      to next keyword</p>
-</blockquote>
-<h3><span id="switch">switch</span><a href="#switch" class="header-anchor">#</a></h3><blockquote>
-<p>:1,10/old/new/g                 replace old with new for first 10 lines<br>:%s/old/new/g                 replace old with new for whole file </p>
-</blockquote>
-<p>comment several lines</p>
-<blockquote>
-<p>;1,10s/^/#/g                      comment first 10 lines<br>:1,10/^#//g                     cancel comments for first 10 lines</p>
-</blockquote>
+<h2><span id="my-note-about-redux">My note about Redux</span><a href="#my-note-about-redux" class="header-anchor">#</a></h2><p>For each reducer, there is going to be a seperate record in the store’s state. Assume we have a errorReducer and a projectReducer, and we combine them into the rootReducer in this way:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> combineReducers(&#123;</span><br><span class="line">  errors: errorReducer,</span><br><span class="line">  projects: projectReducer,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>Then, the state in the store will look like this:</p>
+<img src="https://imgur.com/Rr2WFmH.jpg" alt="store state">
+
+<p>And of course, each Reducer will only change the state which it is <strong>responsible</strong> to. So the errorReducer can never change the state <code>proejcts</code> and projectReducer will never change the state in <code>errors</code>.</p>
 
     </div>
 
@@ -314,7 +241,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Linux/" rel="tag"># Linux</a>
+              <a href="/tags/React-Redux/" rel="tag"># React Redux</a>
           </div>
 
         
@@ -323,13 +250,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/01/Shell_scripts_notes/" rel="prev" title="Shell Scripts Best Practice">
-      <i class="fa fa-chevron-left"></i> Shell Scripts Best Practice
+    <a href="/2020/11/11/Map%20operator%20in%20Rxjs/" rel="prev" title="Map, mergeMap, switchMap and concatMap operators in Rxjs">
+      <i class="fa fa-chevron-left"></i> Map, mergeMap, switchMap and concatMap operators in Rxjs
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/03/15/Packages%20management/" rel="next" title="Packages Management">
-      Packages Management <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -389,7 +313,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">Vim#</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">1. insert#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">2. save#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">2. operation with lines#</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.1.</span> <span class="nav-text">1) move cursor#</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.2.</span> <span class="nav-text">2) delete or paste#</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.3.</span> <span class="nav-text">3) copy#</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.4.</span> <span class="nav-text">4) undo and redo#</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.3.5.</span> <span class="nav-text">5) replace#</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.4.</span> <span class="nav-text">3. Vim settings#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.5.</span> <span class="nav-text">4. search#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.6.</span> <span class="nav-text">switch#</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">Concepts of Redux#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">Dependencies in React#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">Enable Redux in React app#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">My note about Redux#</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
